@@ -14,8 +14,9 @@ class ColleaguesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-            // Здесь будут настройки цвета
+        
+        view.backgroundColor = UIColor(red: 219/255, green: 212/255, blue: 250/255, alpha: 1)
+        tableView.backgroundColor = UIColor(red: 219/255, green: 212/255, blue: 250/255, alpha: 1)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
