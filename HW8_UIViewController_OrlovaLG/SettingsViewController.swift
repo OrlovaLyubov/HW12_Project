@@ -12,6 +12,7 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var changeThemeLabel: UILabel!
     @IBOutlet weak var supportLabel: UILabel!
     @IBOutlet weak var versionLabel: UILabel!
+    @IBOutlet weak var deleteAccountButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,5 +22,7 @@ class SettingsViewController: UIViewController {
         changeThemeLabel.text = "Изменить тему"
         supportLabel.text = "Написать в поддержку"
         versionLabel.text = "Версия приложения"
+        
+        
     }
 }
