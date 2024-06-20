@@ -239,9 +239,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RYo-AW-GwS">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RYo-AW-GwS">
                                 <rect key="frame" x="16" y="207" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1me-Mm-gX6">
+                                <rect key="frame" x="16" y="281" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hei-Gp-HuA">
+                                <rect key="frame" x="16" y="244" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -249,10 +260,23 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lmu-oC-J6C"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lmu-oC-J6C" firstAttribute="trailing" secondItem="1me-Mm-gX6" secondAttribute="trailing" constant="335" id="1A5-e6-Nh9"/>
+                            <constraint firstItem="1me-Mm-gX6" firstAttribute="leading" secondItem="lmu-oC-J6C" secondAttribute="leading" constant="16" id="2oW-Hl-PLi"/>
+                            <constraint firstItem="lmu-oC-J6C" firstAttribute="trailing" secondItem="hei-Gp-HuA" secondAttribute="trailing" constant="335" id="Gag-4p-pQE"/>
+                            <constraint firstItem="RYo-AW-GwS" firstAttribute="top" secondItem="lmu-oC-J6C" secondAttribute="top" constant="52" id="Geq-8T-FbL"/>
+                            <constraint firstItem="lmu-oC-J6C" firstAttribute="trailing" secondItem="RYo-AW-GwS" secondAttribute="trailing" constant="335" id="LDi-wd-r34"/>
+                            <constraint firstItem="hei-Gp-HuA" firstAttribute="top" secondItem="RYo-AW-GwS" secondAttribute="bottom" constant="16" id="dm3-nU-VRz"/>
+                            <constraint firstItem="RYo-AW-GwS" firstAttribute="leading" secondItem="lmu-oC-J6C" secondAttribute="leading" constant="16" id="jb9-yX-xlh"/>
+                            <constraint firstItem="1me-Mm-gX6" firstAttribute="top" secondItem="hei-Gp-HuA" secondAttribute="bottom" constant="16" id="kIJ-FY-iXB"/>
+                            <constraint firstItem="hei-Gp-HuA" firstAttribute="leading" secondItem="lmu-oC-J6C" secondAttribute="leading" constant="16" id="vPi-cO-lbQ"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Настройки" largeTitleDisplayMode="always" id="CaJ-0l-1No"/>
                     <connections>
                         <outlet property="changeThemeLabel" destination="RYo-AW-GwS" id="GbJ-Dd-uXE"/>
+                        <outlet property="supportLabel" destination="hei-Gp-HuA" id="DQa-sn-MYU"/>
+                        <outlet property="versionLabel" destination="1me-Mm-gX6" id="AXQ-NB-Q7r"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OpV-m4-Jl2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -329,7 +353,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemPurpleColor">
-            <color red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="viewFlipsideBackgroundColor">
             <color red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
