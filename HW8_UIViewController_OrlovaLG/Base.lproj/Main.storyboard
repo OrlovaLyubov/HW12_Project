@@ -257,15 +257,23 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXI-Jo-3Ss">
+                                <rect key="frame" x="119" y="765" width="156" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Удалить аккаунт"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lmu-oC-J6C"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="lmu-oC-J6C" firstAttribute="trailing" secondItem="1me-Mm-gX6" secondAttribute="trailing" constant="335" id="1A5-e6-Nh9"/>
                             <constraint firstItem="1me-Mm-gX6" firstAttribute="leading" secondItem="lmu-oC-J6C" secondAttribute="leading" constant="16" id="2oW-Hl-PLi"/>
+                            <constraint firstAttribute="bottom" secondItem="hXI-Jo-3Ss" secondAttribute="bottom" constant="52" id="DLT-V1-YdR"/>
+                            <constraint firstItem="lmu-oC-J6C" firstAttribute="trailing" secondItem="hXI-Jo-3Ss" secondAttribute="trailing" constant="118" id="DuL-fO-oF0"/>
                             <constraint firstItem="lmu-oC-J6C" firstAttribute="trailing" secondItem="hei-Gp-HuA" secondAttribute="trailing" constant="335" id="Gag-4p-pQE"/>
                             <constraint firstItem="RYo-AW-GwS" firstAttribute="top" secondItem="lmu-oC-J6C" secondAttribute="top" constant="52" id="Geq-8T-FbL"/>
                             <constraint firstItem="lmu-oC-J6C" firstAttribute="trailing" secondItem="RYo-AW-GwS" secondAttribute="trailing" constant="335" id="LDi-wd-r34"/>
+                            <constraint firstItem="hXI-Jo-3Ss" firstAttribute="leading" secondItem="lmu-oC-J6C" secondAttribute="leading" constant="119" id="bLt-6j-lUG"/>
                             <constraint firstItem="hei-Gp-HuA" firstAttribute="top" secondItem="RYo-AW-GwS" secondAttribute="bottom" constant="16" id="dm3-nU-VRz"/>
                             <constraint firstItem="RYo-AW-GwS" firstAttribute="leading" secondItem="lmu-oC-J6C" secondAttribute="leading" constant="16" id="jb9-yX-xlh"/>
                             <constraint firstItem="1me-Mm-gX6" firstAttribute="top" secondItem="hei-Gp-HuA" secondAttribute="bottom" constant="16" id="kIJ-FY-iXB"/>
@@ -275,6 +283,7 @@
                     <navigationItem key="navigationItem" title="Настройки" largeTitleDisplayMode="always" id="CaJ-0l-1No"/>
                     <connections>
                         <outlet property="changeThemeLabel" destination="RYo-AW-GwS" id="GbJ-Dd-uXE"/>
+                        <outlet property="deleteAccountButton" destination="hXI-Jo-3Ss" id="5Yw-pb-pfe"/>
                         <outlet property="supportLabel" destination="hei-Gp-HuA" id="DQa-sn-MYU"/>
                         <outlet property="versionLabel" destination="1me-Mm-gX6" id="AXQ-NB-Q7r"/>
                     </connections>
